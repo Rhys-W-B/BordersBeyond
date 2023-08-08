@@ -28,12 +28,10 @@ import org.slf4j.Logger;
 @Mod(tutorialMod.MODID)
 public class tutorialMod
 {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "tutorialmod";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
+    // this is a very important change
 
     public tutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
